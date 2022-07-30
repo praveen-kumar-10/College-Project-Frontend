@@ -6,36 +6,36 @@
   --font-inter: "Inter", sans-serif;
 
   /* Backgrounds */
-  --bg-primary: "#3C37FF";
-  --bg-secondary: "#2520E3";
+  --bg-primary: #3c37ff;
+  --bg-secondary: #2520e3;
 
   /* Outlines */
-  --ol-primary: "#D9DAE5";
-  --ol-secondary: "#E4E4EF";
-  --ol-light: "#F9F8FD";
+  --ol-primary: #d9dae5;
+  --ol-secondary: #e4e4ef;
+  --ol-light: #f9f8fd;
 
   /* Outlines Selected One's */
-  --ols-primary: "#322FB2";
-  --ols-secondary: "#7874FE";
-  --ols-light: "#D3CFFF";
+  --ols-primary: #322fb2;
+  --ols-secondary: #7874fe;
+  --ols-light: #d3cfff;
 
   /* Text */
-  --txt-primary: "#FFF";
-  --txt-secondary: "#E6F0FF";
+  --txt-primary: #fff;
+  --txt-secondary: #e6f0ff;
 
   /* Button */
-  --btn-primary: "#3A38FD";
-  --btn-secondary: "#F4F7FF";
+  --btn-primary: #3a38fd;
+  --btn-secondary: #f4f7ff;
 
   /* ===== Dark Mode ===== */
 
-  --d-bg-primary: "#0A0A0A";
-  --d-bg-secondary: "#262931";
+  --d-bg-primary: #0a0a0a;
+  --d-bg-secondary: #262931;
 
-  --d-btn-primary: "#3C37FF";
+  --d-btn-primary: #3c37ff;
 
-  --d-txt-primary: "#FFF";
-  --d-txt-secondary: "#7F8394";
+  --d-txt-primary: #fff;
+  --d-txt-secondary: #7f8394;
 }
 
 * {
@@ -51,4 +51,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-inter);
   width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
