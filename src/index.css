@@ -55,3 +55,124 @@ body {
   display: grid;
   place-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* ===== Light Mode ===== */
+  /* Font Family's */
+  --font-inter: "Inter", sans-serif;
+
+  /* Backgrounds */
+  --bg-primary: #3c37ff;
+  --bg-secondary: #2520e3;
+
+  /* Outlines */
+  --ol-primary: #d9dae5;
+  --ol-secondary: #e4e4ef;
+  --ol-light: #f9f8fd;
+
+  /* Outlines Selected One's */
+  --ols-primary: #322fb2;
+  --ols-secondary: #7874fe;
+  --ols-light: #d3cfff;
+
+  /* Text */
+  --txt-primary: #fff;
+  --txt-secondary: #e6f0ff;
+
+  /* Button */
+  --btn-primary: #3a38fd;
+  --btn-secondary: #f4f7ff;
+
+  /* ===== Dark Mode ===== */
+
+  --d-bg-primary: #0a0a0a;
+  --d-bg-secondary: #262931;
+
+  --d-btn-primary: #3c37ff;
+
+  --d-txt-primary: #fff;
+  --d-txt-secondary: #7f8394;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-inter);
+  width: 100%;
+  height: 100vh;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input {
+  outline: none !important;
+  background: transparent;
+  box-shadow: none !important;
+  border: 1.5px solid var(--ol-primary);
+}
+
+input:focus {
+  border: 1.5px solid var(--ols-primary) !important;
+}
+
+input.error {
+  border: 1.5px solid red;
+}
+input.success {
+  border: 1.5px solid green;
+}
+
+.form-check {
+  padding: 10px 50px !important;
+  border: 1.5px solid var(--ol-primary) !important;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-check:hover {
+  cursor: pointer;
+  border-color: var(--ols-primary) !important;
+}
+
+.form-check .form-check-input {
+  margin-right: 30px;
+}
+
+.form-check .form-check-label {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+}
