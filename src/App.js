@@ -1,24 +1,17 @@
 /** @format */
 
 import './App.css';
-import Button from './components/UI/Button';
-import Form from './Form';
-
-import useInput from './utils/custom-hooks/useInput';
+import { Routes, Route } from 'react-router-dom';
+import Login from './components/auth/Login';
+import SignUp from './components/auth/Login';
 
 function App() {
-  const { value, handleChange, handleReset, hasError, handleBlur, isTouched } =
-    useInput('', (value) => value.length > 8);
-
   return (
-    <div className='App'>
-      {/* <Form />*/}
-      <input
-        value={value}
-        onChange={(event) => handleChange(event.target.value)}
-        onBlur={handleBlur}
-      />
-      {isTouched && hasError && <p>Error</p>}
+    <div>
+      <Routes>
+        <Route path='/signup' element={SignUp} />
+        <Route path='/login' element={Login} />
+      </Routes>
     </div>
   );
 }
