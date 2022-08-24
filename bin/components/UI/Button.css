@@ -1,0 +1,16 @@
+.btn {
+  min-width: 140px;
+  min-height: 40px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.btn-primary {
+  background: var(--btn-primary);
+  border: 1px solid rgba(173, 171, 255, 0.4);
+  color: var(--txt-primary);
+}

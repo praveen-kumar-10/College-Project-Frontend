@@ -1,16 +1,15 @@
-import "./App.css";
-import Button from "./components/UI/Button";
+import "./App.scss";
+import Layout from "./Layout";
+import Signup from "./pages/Signup";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Button
-        className="btn-primary"
-        title="Button"
-        type="button"
-        onClick={() => alert("hello")}
-      />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

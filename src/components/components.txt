@@ -1,5 +1,0 @@
-The components are the reusable one's.
-
-UI related components like Button, Input, etc will be under "src/components/UI/"
-
-Normal Page related will be in "src/components/pages/"

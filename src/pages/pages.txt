@@ -1,3 +1,0 @@
-The individual pages go under the "src/pages/PAGENAME"
-
-Each page has seperate Component and a Style related files.
